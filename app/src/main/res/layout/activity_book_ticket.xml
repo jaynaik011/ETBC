@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    >
+
+    <!-- <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         />-->
+    <!--   android:background="@drawable/ando3"-->
+
+    <!-- <ScrollView
+         android:id="@+id/scrollView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="6dp">-->
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#9333"
+        android:orientation="vertical">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|clip_vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="Book Ticket"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <!--<TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="From Station"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+-->
+            <Spinner
+                android:id="@+id/source"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:spinnerMode="dialog"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp" />
+
+        </TableRow>
+        <TableRow
+            android:id="@id/destinationtable"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="To Station "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                />-->
+
+            <Spinner
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+            <!--android:entries="@array/Stations"-->
+
+        </TableRow>
+        <TableRow
+            android:id="@id/tbpassanger"
+
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:id="@+id/N0_passenger"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Passenger"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:textStyle="bold" />-->
+            <Spinner
+                android:id="@+id/passenger"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@id/tb_joureny"
+
+            android:layout_width="224dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <!-- <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="journey_type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:textStyle="bold" />-->
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:spinnerMode="dialog" />
+        </TableRow>
+        <TableRow
+            android:id="@id/tb_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+           <!-- <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Total"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+-->
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:padding="5dp"
+                android:textColor="#030303" />
+        </TableRow>
+        <TableRow
+            android:id="@id/tb_bkbook"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BKBookBtn"
+                android:layout_height="50dp"
+                android:text="Book"
+
+                android:textSize="20sp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#FF0000"
+        android:layout_height="wrap_content"/>
+    <!--</ScrollView>-->
+</RelativeLayout>
+
+
+    <!--android:background="#ffffff"-->

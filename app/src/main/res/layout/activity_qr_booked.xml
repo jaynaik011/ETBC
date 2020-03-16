@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="Book Ticket"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|clip_vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:autofillHints="Source"
+                android:id="@+id/qrSource"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|clip_vertical"
+            android:gravity="center_horizontal">
+
+
+
+             <Spinner
+
+                android:autofillHints="destination"
+                android:id="@+id/destination"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|clip_vertical"
+            android:gravity="center_horizontal">
+
+            <Spinner
+
+                android:autofillHints="Number of passangers"
+                android:id="@+id/passenger"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:spinnerMode="dialog" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|clip_vertical"
+            android:gravity="center_horizontal">
+
+            <Spinner
+
+                android:autofillHints="Journey Type"
+                android:id="@+id/type"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:spinnerMode="dialog" />
+        </TableRow><TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center|clip_vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+
+            android:id="@+id/amount"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:padding="5dp"
+            android:textColor="#030303" />
+    </TableRow><TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center|clip_vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/BKBookBtn"
+            android:layout_height="50dp"
+            android:text="Book"
+
+
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"/>
+    </TableRow><TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center|clip_vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/reason"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#FF0000"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+    <!--android:background="#ffffff"-->

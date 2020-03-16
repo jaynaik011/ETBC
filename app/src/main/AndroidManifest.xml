@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.etbc">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="com.android.hardware.Camera.focus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Admin.Ticket_History_Admin"></activity>
+        <activity android:name=".Admin.UserProfile_admin" />
+        <activity android:name=".password" />
+        <activity android:name=".QrBooked" />
+        <activity android:name=".Admin.Admin__menu" />
+        <activity android:name=".register2" />
+        <activity android:name=".login_class">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".HIstory" />
+        <activity android:name=".Ticket_details" />
+        <activity android:name=".User_Menu" />
+        <activity android:name=".BookTicket" />
+        <activity android:name=".welcome" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

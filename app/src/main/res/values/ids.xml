@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="app_bar_settings" type="id" />
+    <item name="destinationtable" type="id" />
+    <item name="tbpassanger" type="id" />
+    <item name="tb_joureny" type="id" />
+    <item name="tb_amt" type="id" />
+    <item name="tb_bkbook" type="id" />
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/background">
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="138dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="E_F_T_B "
+            android:textAlignment="center"
+            android:textColor="#0274B4"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="211dp"
+            android:layout_height="70dp"
+            android:text="Local Train"
+            android:textColor="#0274B4"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>-->
+    <TextView
+        android:id="@+id/txt_rider_app"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="looking_for_the_Train"
+        android:textAlignment="center"
+        android:textColor="@color/rippleEffectColor"
+        android:textSize="15sp">
+
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_above="@+id/txt_rider_app"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@color/rippleEffectColor"
+            android:text="SIGN IN"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:layout_marginLeft="6dp"
+            android:background="@color/rippleEffectColor"
+            android:layout_width="0dp"
+            android:shadowColor="@color/black"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

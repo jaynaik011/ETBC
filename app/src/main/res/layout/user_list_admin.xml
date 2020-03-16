@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/li_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_admin_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="User Name:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/lightblue"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <!--    <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/id_admin_list"
+                    android:textColor="@color/lightblue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="User Id:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Email_admin_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lightblue" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/bdate_admin_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date Of Birth:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lightblue" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/Phone_admin_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lightblue" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/Gender_admin_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gender:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lightblue" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/rippleEffectColor"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/rippleEffectColor"
+                    android:shadowColor="@color/black"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

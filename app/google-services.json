@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392035227388",
+    "firebase_url": "https://etbc-7d703.firebaseio.com",
+    "project_id": "etbc-7d703",
+    "storage_bucket": "etbc-7d703.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392035227388:android:6a566406ba4fd676b26979",
+        "android_client_info": {
+          "package_name": "com.example.etbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392035227388-k1dll0ibsjrs3scpssr6s4vkivfhd0qg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.etbc",
+            "certificate_hash": "4c85d9eba98d4678a6ce7ebb4ea9140e96224a37"
+          }
+        },
+        {
+          "client_id": "392035227388-0hns1m7hlrn9ugsg2844iq5ne4d66f1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWJKVJ0qt87aRVYryKKeucqKAqz5aMQJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392035227388-0hns1m7hlrn9ugsg2844iq5ne4d66f1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

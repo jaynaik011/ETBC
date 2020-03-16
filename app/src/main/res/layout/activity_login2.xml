@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:text="Environment Friendly Ticket Booking"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="30dp"/>
+
+   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="260dp"
+           android:padding="10dp"
+           app:srcCompat="@drawable/background" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmail"
+                android:padding="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                />
+       <TextView
+           android:id="@+id/forgotpass"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/login_btn"
+           android:layout_gravity="center"
+           android:textAlignment="center"
+           android:gravity="center_horizontal"
+           android:layout_marginEnd="23dp"
+           android:text="Forgot Password"
+           android:textColor="@color/colorPrimaryDark"
+           android:textSize="14sp"
+           android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/rippleEffectColor"
+        android:text="Sign In"
+        android:textColor="@color/white" />
+</LinearLayout>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Don't Have An Account ? Sign UP  "
+           android:gravity="center"
+           android:textAlignment="center"
+           android:layout_gravity="center"
+           android:id="@+id/reg"
+           android:textColor="@color/colorPrimaryDark"/>
+
+
+   </LinearLayout>
+
+</RelativeLayout>
+
+
